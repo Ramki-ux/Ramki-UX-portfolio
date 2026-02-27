@@ -1,0 +1,1068 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ramakrishnan R — UX/UI Designer</title>
+    <meta
+      name="description"
+      content="UX/UI Designer crafting clear, scalable digital experiences for businesses across the UK, Australia, Qatar, and India."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Lexend:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Leaflet map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <!-- Flag icons (renders proper flag images, no broken emoji) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons@7.2.3/css/flag-icons.min.css" />
+  </head>
+  <body>
+    <!-- ─── NAV ─── -->
+    <nav id="navbar" class="navbar">
+      <a href="#hero" class="nav-logo">RK<span class="dot">.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Work</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
+          <span class="toggle-track">
+            <span class="toggle-thumb">
+              <svg
+                class="icon-sun"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <circle cx="12" cy="12" r="5" />
+                <line x1="12" y1="1" x2="12" y2="3" />
+                <line x1="12" y1="21" x2="12" y2="23" />
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                <line x1="1" y1="12" x2="3" y2="12" />
+                <line x1="21" y1="12" x2="23" y2="12" />
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+              </svg>
+              <svg
+                class="icon-moon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" />
+              </svg>
+            </span>
+          </span>
+        </button>
+        <a href="#contact" class="nav-cta">Let's Talk</a>
+      </div>
+    </nav>
+
+    <!-- ─── HERO ─── -->
+    <section id="hero" class="hero">
+      <!-- Floating UI elements -->
+      <div class="hero-blob blob-1"></div>
+      <div class="hero-blob blob-2"></div>
+      <div class="hero-blob blob-3"></div>
+
+      <div class="float-card fc-1">
+        <div class="fc-icon">✦</div>
+        <div class="fc-text">
+          <span class="fc-label">Product Design</span>
+          <span class="fc-sub">End-to-end UX</span>
+        </div>
+      </div>
+      <div class="float-card fc-2">
+        <div class="fc-icon">⬡</div>
+        <div class="fc-text">
+          <span class="fc-label">Design Systems</span>
+          <span class="fc-sub">Scalable components</span>
+        </div>
+      </div>
+      <div class="float-card fc-3">
+        <div class="fc-icon">◈</div>
+        <div class="fc-text">
+          <span class="fc-label">Web Design</span>
+          <span class="fc-sub">Conversion-driven</span>
+        </div>
+      </div>
+      <div class="float-card fc-4">
+        <div class="fc-dot"></div>
+        <span class="fc-label">Available for work</span>
+      </div>
+
+      <div class="hero-content" id="heroContent">
+        <div class="hero-eyebrow">
+          <span class="eyebrow-dot"></span>
+          UX/UI Designer
+        </div>
+        <h1 class="hero-heading">
+          <span class="line-mask"
+            ><span class="line">Designing Clear,</span></span
+          >
+          <span class="line-mask"
+            ><span class="line">Scalable Digital</span></span
+          >
+          <span class="line-mask"
+            ><span class="line gradient-text">Experiences.</span></span
+          >
+        </h1>
+        <p class="hero-sub">
+          Designing digital products and websites for businesses across the
+          <strong>UK, Australia, Qatar, and India</strong>. Specializing in
+          product interfaces, conversion-driven websites, and user-centered
+          design systems.
+        </p>
+        <div class="hero-ctas">
+          <a href="#projects" class="btn btn-primary">
+            <span>View Selected Work</span>
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+          <a href="resume.pdf" class="btn btn-ghost" download>
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+              <polyline points="7,10 12,15 17,10" />
+              <line x1="12" y1="15" x2="12" y2="3" />
+            </svg>
+            <span>Download Resume</span>
+          </a>
+        </div>
+        <div class="hero-badges">
+          <span class="badge">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"
+              />
+              <circle cx="12" cy="9" r="2.5" />
+            </svg>
+            India
+          </span>
+          <span class="badge">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <circle cx="12" cy="12" r="10" />
+              <polyline points="12,6 12,12 16,14" />
+            </svg>
+            1.5+ Years Experience
+          </span>
+          <span class="badge">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <rect x="2" y="3" width="20" height="14" rx="2" />
+              <line x1="8" y1="21" x2="16" y2="21" />
+              <line x1="12" y1="17" x2="12" y2="21" />
+            </svg>
+            Web + Product Design
+          </span>
+        </div>
+      </div>
+
+      <div class="scroll-hint" id="scrollHint">
+        <span class="scroll-text">Scroll to explore</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ─── ABOUT ─── -->
+    <section id="about" class="about reveal-section">
+      <div class="container grid-2col">
+        <div class="about-left">
+          <div class="section-label"><span class="label-dot"></span>About</div>
+          <h2 class="section-heading reveal-text">
+            Crafting interfaces that&nbsp;<em>actually</em> make sense.
+          </h2>
+          <div class="about-body reveal-stagger">
+            <p>
+              I am a UX/UI Designer focused on building intuitive
+              and scalable digital experiences. My work spans corporate
+              platforms, hospitality websites, service marketplaces, and
+              enterprise applications across international markets.
+            </p>
+            <p>
+              Every project starts with deep user understanding — research,
+              empathy, and clarity — before a single pixel is placed.
+            </p>
+          </div>
+          <div class="about-stats">
+            <div class="stat-card reveal-stagger">
+              <div class="stat-value-row">
+                <span class="stat-number" data-count="10">0</span
+                ><span class="stat-unit">+</span>
+              </div>
+              <span class="stat-label">Projects Delivered</span>
+            </div>
+            <div class="stat-card reveal-stagger">
+              <div class="stat-value-row">
+                <span class="stat-number" data-count="4">0</span
+                ><span class="stat-unit"></span>
+              </div>
+              <span class="stat-label">Countries Served</span>
+            </div>
+            <div class="stat-card reveal-stagger">
+              <div class="stat-value-row">
+                <span class="stat-number" data-count="2">0</span
+                ><span class="stat-unit">+</span>
+              </div>
+              <span class="stat-label">Years in Design</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-right">
+          <div class="about-visual">
+            <div class="av-ring av-ring-1"></div>
+            <div class="av-ring av-ring-2"></div>
+            <div class="av-ring av-ring-3"></div>
+            <div class="av-center">
+              <div class="av-initials">RK</div>
+              <div class="av-sub">UX/UI Designer</div>
+            </div>
+            <div class="av-orbit orbit-1">
+              <div class="orbit-icon">🎨</div>
+            </div>
+            <div class="av-orbit orbit-2">
+              <div class="orbit-icon">✦</div>
+            </div>
+            <div class="av-orbit orbit-3">
+              <div class="orbit-icon">⬡</div>
+            </div>
+            <div class="av-orbit orbit-4">
+              <div class="orbit-icon">◈</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── GLOBAL WORK ─── -->
+    <section id="global" class="global reveal-section">
+      <div class="container">
+        <div class="section-label">
+          <span class="label-dot"></span>Global Reach
+        </div>
+        <h2 class="section-heading reveal-text">
+          Designing across<br /><span class="gradient-text"
+            >global markets.</span
+          >
+        </h2>
+        <div class="global-layout">
+            <!-- Leaflet interactive world map -->
+            <div id="world-map-leaflet" class="map-container"></div>
+
+            <!-- Country pills -->
+            <div class="country-list">
+              <div class="country-item active" data-country="United Kingdom">
+                <span class="ci-flag fi fi-gb"></span>
+                <span class="ci-name">United Kingdom</span>
+              </div>
+              <div class="country-item" data-country="Ireland">
+                <span class="ci-flag fi fi-ie"></span>
+                <span class="ci-name">Ireland</span>
+              </div>
+              <div class="country-item" data-country="Qatar">
+                <span class="ci-flag fi fi-qa"></span>
+                <span class="ci-name">Qatar</span>
+              </div>
+              <div class="country-item" data-country="India">
+                <span class="ci-flag fi fi-in"></span>
+                <span class="ci-name">India</span>
+              </div>
+              <div class="country-item" data-country="Australia">
+                <span class="ci-flag fi fi-au"></span>
+                <span class="ci-name">Australia</span>
+              </div>
+            </div>
+          </div>
+
+      </div>
+    </section>
+
+    <!-- ─── PROJECTS (STICKY SCROLL) ─── -->
+    <section id="projects" class="projects-sticky-wrapper">
+      <div class="projects-sticky-inner">
+        <div class="projects-sidebar">
+          <div class="section-label">
+            <span class="label-dot"></span>Selected Work
+          </div>
+          <h2 class="section-heading">
+            Projects that<br /><span class="gradient-text">tell a story.</span>
+          </h2>
+          <div class="project-nav" id="projectNav">
+            <button class="pnav-item active" data-project="0">
+              Samco Holdings
+            </button>
+            <button class="pnav-item" data-project="1">Ravens Ait</button>
+            <button class="pnav-item" data-project="2">RAASA Restaurant</button>
+            <button class="pnav-item" data-project="3">
+              Whitfield Service
+            </button>
+            <button class="pnav-item" data-project="4">
+              Fastnangs Australia
+            </button>
+          </div>
+        </div>
+        <div class="projects-display" id="projectsDisplay">
+          <!-- Project Cards -->
+          <div class="project-card active" data-project="0">
+            <div class="pc-image-wrap">
+              <div class="pc-image" id="proj-img-0">
+                <div class="pc-mockup">
+                  <div class="pc-mockup-bar">
+                    <span class="pmb-dot"></span><span class="pmb-dot"></span><span class="pmb-dot"></span>
+                    <span class="pmb-url">samko-holdings.com</span>
+                  </div>
+                  <img src="images/samco.png" alt="Samco Holdings screenshot" class="pc-mockup-img"/>
+                </div>
+              </div>
+              <div class="pc-tag-row">
+                <span class="pc-tag">Corporate</span>
+                <span class="pc-tag">Finance</span>
+                <span class="pc-tag">UX/UI</span>
+              </div>
+            </div>
+            <div class="pc-info">
+              <span class="pc-number">01</span>
+              <h3 class="pc-title">Samco Holdings</h3>
+              <p class="pc-desc">
+                Corporate investment platform designed to simplify complex
+                financial information with structured UX and professional layout
+                systems.
+              </p>
+              <a
+                href="https://samko-holdings.com/"
+                target="_blank"
+                rel="noopener"
+                class="pc-link"
+              >
+                View Project
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                  />
+                  <polyline points="15,3 21,3 21,9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="project-card" data-project="1">
+            <div class="pc-image-wrap">
+              <div class="pc-image" id="proj-img-1">
+                <div class="pc-mockup">
+                  <div class="pc-mockup-bar">
+                    <span class="pmb-dot"></span><span class="pmb-dot"></span><span class="pmb-dot"></span>
+                    <span class="pmb-url">ravensait.co.uk</span>
+                  </div>
+                  <img src="images/ravens.png" alt="Ravens Ait screenshot" class="pc-mockup-img"/>
+                </div>
+              </div>
+              <div class="pc-tag-row">
+                <span class="pc-tag">Hospitality</span>
+                <span class="pc-tag">Events</span>
+                <span class="pc-tag">UI Design</span>
+              </div>
+            </div>
+            <div class="pc-info">
+              <span class="pc-number">02</span>
+              <h3 class="pc-title">Ravens Ait</h3>
+              <p class="pc-desc">
+                Luxury event venue website designed for weddings and private
+                events with immersive storytelling and gallery-first design.
+              </p>
+              <a
+                href="https://ravensait.co.uk/"
+                target="_blank"
+                rel="noopener"
+                class="pc-link"
+              >
+                View Project
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                  />
+                  <polyline points="15,3 21,3 21,9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="project-card" data-project="2">
+            <div class="pc-image-wrap">
+              <div class="pc-image" id="proj-img-2">
+                <div class="pc-mockup">
+                  <div class="pc-mockup-bar">
+                    <span class="pmb-dot"></span><span class="pmb-dot"></span><span class="pmb-dot"></span>
+                    <span class="pmb-url">raasarestaurant.co.uk</span>
+                  </div>
+                  <img src="images/raasa.png" alt="RAASA Restaurant screenshot" class="pc-mockup-img"/>
+                </div>
+              </div>
+              <div class="pc-tag-row">
+                <span class="pc-tag">Restaurant</span>
+                <span class="pc-tag">Premium</span>
+                <span class="pc-tag">Web Design</span>
+              </div>
+            </div>
+            <div class="pc-info">
+              <span class="pc-number">03</span>
+              <h3 class="pc-title">RAASA Restaurant</h3>
+              <p class="pc-desc">
+                Restaurant website designed to reflect the premium dining
+                experience with elegant visuals and clear menu navigation.
+              </p>
+              <a
+                href="https://www.raasarestaurant.co.uk/"
+                target="_blank"
+                rel="noopener"
+                class="pc-link"
+              >
+                View Project
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                  />
+                  <polyline points="15,3 21,3 21,9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="project-card" data-project="3">
+            <div class="pc-image-wrap">
+              <div class="pc-image" id="proj-img-3">
+                <div class="pc-mockup">
+                  <div class="pc-mockup-bar">
+                    <span class="pmb-dot"></span><span class="pmb-dot"></span><span class="pmb-dot"></span>
+                    <span class="pmb-url">whitfieldservicestation.co.uk</span>
+                  </div>
+                  <img src="images/whitfield.png" alt="Whitfield Service Station screenshot" class="pc-mockup-img"/>
+                </div>
+              </div>
+              <div class="pc-tag-row">
+                <span class="pc-tag">Automotive</span>
+                <span class="pc-tag">Services</span>
+                <span class="pc-tag">UX</span>
+              </div>
+            </div>
+            <div class="pc-info">
+              <span class="pc-number">04</span>
+              <h3 class="pc-title">Whitfield Service Station</h3>
+              <p class="pc-desc">
+                Automotive service website designed to clearly present services
+                and simplify contact and booking actions.
+              </p>
+              <a
+                href="https://whitfieldservicestation.co.uk/"
+                target="_blank"
+                rel="noopener"
+                class="pc-link"
+              >
+                View Project
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                  />
+                  <polyline points="15,3 21,3 21,9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="project-card" data-project="4">
+            <div class="pc-image-wrap">
+              <div class="pc-image" id="proj-img-4">
+                <div class="pc-mockup">
+                  <div class="pc-mockup-bar">
+                    <span class="pmb-dot"></span><span class="pmb-dot"></span><span class="pmb-dot"></span>
+                    <span class="pmb-url">fastnangs.com</span>
+                  </div>
+                  <img src="images/fastnangs.png" alt="Fastnangs Australia screenshot" class="pc-mockup-img"/>
+                </div>
+              </div>
+              <div class="pc-tag-row">
+                <span class="pc-tag">Marketplace</span>
+                <span class="pc-tag">Australia</span>
+                <span class="pc-tag">UX/UI</span>
+              </div>
+            </div>
+            <div class="pc-info">
+              <span class="pc-number">05</span>
+              <h3 class="pc-title">Fastnangs Australia</h3>
+              <p class="pc-desc">
+                Service marketplace platform designed to simplify navigation and
+                guide users toward quick purchases.
+              </p>
+              <a
+                href="https://www.fastnangs.com/"
+                target="_blank"
+                rel="noopener"
+                class="pc-link"
+              >
+                View Project
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                  />
+                  <polyline points="15,3 21,3 21,9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── ADDITIONAL WORK ─── -->
+    <section id="additional" class="additional reveal-section">
+      <div class="container">
+        <div class="section-label">
+          <span class="label-dot"></span>Additional Work
+        </div>
+        <h2 class="section-heading reveal-text">
+          More things I've <span class="gradient-text">built.</span>
+        </h2>
+        <div class="add-grid">
+          <div class="add-card reveal-stagger">
+            <div class="add-card-top">
+              <div class="add-icon">🏨</div>
+              <span class="add-country">🇬🇧 UK</span>
+            </div>
+            <h3 class="add-title">Warren House Hotel</h3>
+            <p class="add-desc">
+              Luxury hospitality website concept focused on immersive
+              storytelling and brand experience.
+            </p>
+            <div class="add-tags">
+              <span>Hospitality</span><span>Luxury</span
+              ><span>Storytelling</span>
+            </div>
+          </div>
+
+          <div class="add-card reveal-stagger">
+            <div class="add-card-top">
+              <div class="add-icon">💻</div>
+              <span class="add-country">🇶🇦 Qatar</span>
+            </div>
+            <h3 class="add-title">Salam Technologies</h3>
+            <p class="add-desc">
+              Enterprise B2B technology website simplifying complex services for
+              an international audience.
+            </p>
+            <div class="add-tags">
+              <span>B2B</span><span>Enterprise</span><span>Tech</span>
+            </div>
+          </div>
+
+          <div class="add-card reveal-stagger">
+            <div class="add-card-top">
+              <div class="add-icon">🔐</div>
+              <span class="add-country">🇮🇳 India</span>
+            </div>
+            <h3 class="add-title">National Cyber Security Service</h3>
+            <p class="add-desc">
+              Cybersecurity platform concept communicating authority, trust, and
+              clear service offerings.
+            </p>
+            <div class="add-tags">
+              <span>Security</span><span>Government</span><span>UX</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── DESIGN PROCESS ─── -->
+    <section id="process" class="process">
+      <div class="process-sticky">
+        <div class="container">
+          <div class="section-label">
+            <span class="label-dot"></span>Design Process
+          </div>
+          <h2 class="section-heading reveal-text">
+            How I approach<br /><span class="gradient-text">every project.</span>
+          </h2>
+        </div>
+        <div class="process-track" id="processTrack">
+          <div class="process-step" data-step="0">
+            <div class="ps-number">01</div>
+            <div class="ps-icon">🔍</div>
+            <div class="ps-phase">Discover</div>
+            <div class="ps-items">
+              <span>Research</span>
+              <span>User Interviews</span>
+              <span>Competitive Analysis</span>
+            </div>
+          </div>
+          <div class="process-step" data-step="1">
+            <div class="ps-number">02</div>
+            <div class="ps-icon">🎯</div>
+            <div class="ps-phase">Define</div>
+            <div class="ps-items">
+              <span>User Flows</span>
+              <span>Information Architecture</span>
+              <span>Problem Framing</span>
+            </div>
+          </div>
+          <div class="process-step" data-step="2">
+            <div class="ps-number">03</div>
+            <div class="ps-icon">✏️</div>
+            <div class="ps-phase">Design</div>
+            <div class="ps-items">
+              <span>Wireframes</span>
+              <span>UI Design</span>
+              <span>Design Systems</span>
+            </div>
+          </div>
+          <div class="process-step" data-step="3">
+            <div class="ps-number">04</div>
+            <div class="ps-icon">🚀</div>
+            <div class="ps-phase">Deliver</div>
+            <div class="ps-items">
+              <span>Prototyping</span>
+              <span>User Testing</span>
+              <span>Dev Handoff</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── EXPERIENCE ─── -->
+    <section id="experience" class="experience reveal-section">
+      <div class="container">
+        <div class="section-label">
+          <span class="label-dot"></span>Experience
+        </div>
+        <h2 class="section-heading reveal-text">
+          Where I've <span class="gradient-text">grown.</span>
+        </h2>
+        <div class="timeline">
+          <div class="tl-item reveal-stagger">
+            <div class="tl-left">
+              <div class="tl-dot"></div>
+              <div class="tl-date">2023 – Present</div>
+            </div>
+            <div class="tl-right">
+              <h3 class="tl-role">UI/UX Designer</h3>
+              <div class="tl-company">IVA Technos</div>
+              <p class="tl-desc">
+                Leading end-to-end UX design for digital products across
+                multiple international markets. Designing scalable interfaces
+                and contributing to design systems.
+              </p>
+              <div class="tl-tags">
+                <span>Product Design</span><span>Design Systems</span
+                ><span>Figma</span>
+              </div>
+            </div>
+          </div>
+          <div class="tl-item reveal-stagger">
+            <div class="tl-left">
+              <div class="tl-dot"></div>
+              <div class="tl-date">2022</div>
+            </div>
+            <div class="tl-right">
+              <h3 class="tl-role">UX Design Intern</h3>
+              <div class="tl-company">KONE Elevators</div>
+              <p class="tl-desc">
+                Contributed to UX research and interface design for elevator
+                industry digital platforms. Assisted in user research, journey
+                mapping, and prototyping.
+              </p>
+              <div class="tl-tags">
+                <span>UX Research</span><span>Prototyping</span
+                ><span>Journey Mapping</span>
+              </div>
+            </div>
+          </div>
+          <div class="tl-item reveal-stagger">
+            <div class="tl-left">
+              <div class="tl-dot"></div>
+              <div class="tl-date">2022</div>
+            </div>
+            <div class="tl-right">
+              <h3 class="tl-role">Graphic Design Intern</h3>
+              <div class="tl-company">Loyalytics</div>
+              <p class="tl-desc">
+                Created marketing graphics, social media assets, and visual
+                branding materials for a data analytics startup.
+              </p>
+              <div class="tl-tags">
+                <span>Graphic Design</span><span>Branding</span
+                ><span>Illustrator</span>
+              </div>
+            </div>
+          </div>
+          <div class="tl-item reveal-stagger">
+            <div class="tl-left">
+              <div class="tl-dot"></div>
+              <div class="tl-date">Ongoing</div>
+            </div>
+            <div class="tl-right">
+              <h3 class="tl-role">Freelance Designer</h3>
+              <div class="tl-company">Self-Employed</div>
+              <p class="tl-desc">
+                Delivering end-to-end UX/UI design for clients across the UK,
+                Australia, Qatar, and India in hospitality, finance, and tech
+                sectors.
+              </p>
+              <div class="tl-tags">
+                <span>Freelance</span><span>Web Design</span
+                ><span>Product UX</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── SKILLS ─── -->
+    <section id="skills" class="skills reveal-section">
+      <div class="container">
+        <div class="section-label"><span class="label-dot"></span>Skills</div>
+        <h2 class="section-heading reveal-text">
+          What I bring to<br /><span class="gradient-text">the table.</span>
+        </h2>
+        <div class="skills-layout">
+          <div class="skills-group">
+            <h3 class="skills-cat">UX Design</h3>
+            <div class="skills-chips">
+              <div class="skill-chip reveal-stagger">User Research</div>
+              <div class="skill-chip reveal-stagger">Wireframing</div>
+              <div class="skill-chip reveal-stagger">User Flows</div>
+              <div class="skill-chip reveal-stagger">
+                Information Architecture
+              </div>
+              <div class="skill-chip reveal-stagger">Usability Testing</div>
+              <div class="skill-chip reveal-stagger">Journey Mapping</div>
+            </div>
+          </div>
+          <div class="skills-group">
+            <h3 class="skills-cat">UI Design</h3>
+            <div class="skills-chips">
+              <div class="skill-chip reveal-stagger">Design Systems</div>
+              <div class="skill-chip reveal-stagger">Responsive Design</div>
+              <div class="skill-chip reveal-stagger">Visual Design</div>
+              <div class="skill-chip reveal-stagger">Typography</div>
+              <div class="skill-chip reveal-stagger">Prototyping</div>
+              <div class="skill-chip reveal-stagger">Interaction Design</div>
+            </div>
+          </div>
+          <div class="skills-group">
+            <h3 class="skills-cat">Tools</h3>
+            <div class="skills-chips">
+              <div class="skill-chip reveal-stagger tool-chip">
+                <span class="tool-icon">🎨</span>Figma
+              </div>
+              <div class="skill-chip reveal-stagger tool-chip">
+                <span class="tool-icon">📋</span>FigJam
+              </div>
+              <div class="skill-chip reveal-stagger tool-chip">
+                <span class="tool-icon">🖼️</span>Photoshop
+              </div>
+              <div class="skill-chip reveal-stagger tool-chip">
+                <span class="tool-icon">✒️</span>Illustrator
+              </div>
+              <div class="skill-chip reveal-stagger tool-chip">
+                <span class="tool-icon">🎭</span>Canva
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── CONTACT ─── -->
+    <section id="contact" class="contact reveal-section">
+      <div class="container">
+        <div class="contact-inner">
+          <div class="contact-visual">
+            <svg class="contact-illustration" viewBox="0 0 380 380" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Contact illustration">
+              <!-- Background blob -->
+              <ellipse cx="190" cy="200" rx="160" ry="150" fill="url(#blobGrad)" opacity="0.18"/>
+
+              <!-- Glow ring -->
+              <circle cx="190" cy="190" r="130" stroke="url(#ringGrad)" stroke-width="1.5" stroke-dasharray="6 6" opacity="0.5">
+                <animateTransform attributeName="transform" type="rotate" from="0 190 190" to="360 190 190" dur="28s" repeatCount="indefinite"/>
+              </circle>
+
+              <!-- Central envelope -->
+              <g transform="translate(130, 128)">
+                <!-- Envelope body -->
+                <rect x="0" y="16" width="120" height="84" rx="10" fill="url(#envGrad)" opacity="0.95"/>
+                <!-- Envelope flap -->
+                <path d="M0 26 L60 70 L120 26 L120 16 Q120 10 110 10 L10 10 Q0 10 0 16 Z" fill="url(#envFlapGrad)"/>
+                <!-- Envelope lines -->
+                <line x1="0" y1="26" x2="60" y2="70" stroke="rgba(27,191,168,0.35)" stroke-width="1.5"/>
+                <line x1="120" y1="26" x2="60" y2="70" stroke="rgba(27,191,168,0.35)" stroke-width="1.5"/>
+                <!-- @ symbol inside -->
+                <text x="60" y="72" text-anchor="middle" font-family="Lexend,sans-serif" font-size="22" font-weight="800" fill="rgba(27,191,168,0.7)">@</text>
+              </g>
+
+              <!-- Chat bubble top-right -->
+              <g transform="translate(268, 90)">
+                <rect x="0" y="0" width="72" height="44" rx="14" fill="url(#bubble1Grad)"/>
+                <path d="M14 44 L8 56 L28 44 Z" fill="url(#bubble1Grad)"/>
+                <!-- Checkmark -->
+                <polyline points="18,22 26,30 52,12" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.9"/>
+              </g>
+
+              <!-- Chat bubble bottom-left -->
+              <g transform="translate(42, 238)">
+                <rect x="0" y="0" width="84" height="48" rx="14" fill="url(#bubble2Grad)"/>
+                <path d="M60 48 L68 62 L50 48 Z" fill="url(#bubble2Grad)"/>
+                <!-- Dots inside -->
+                <circle cx="26" cy="24" r="5" fill="white" opacity="0.85"/>
+                <circle cx="42" cy="24" r="5" fill="white" opacity="0.85"/>
+                <circle cx="58" cy="24" r="5" fill="white" opacity="0.85"/>
+              </g>
+
+              <!-- Floating sparkle nodes -->
+              <g class="ci-float-1">
+                <circle cx="72" cy="118" r="20" fill="url(#nodeGrad1)" opacity="0.9"/>
+                <text x="72" y="124" text-anchor="middle" font-size="16">✦</text>
+              </g>
+              <g class="ci-float-2">
+                <circle cx="308" cy="270" r="16" fill="url(#nodeGrad2)" opacity="0.9"/>
+                <text x="308" y="276" text-anchor="middle" font-size="13">◈</text>
+              </g>
+              <g class="ci-float-3">
+                <circle cx="330" cy="148" r="12" fill="url(#nodeGrad1)" opacity="0.7"/>
+                <text x="330" y="153" text-anchor="middle" font-size="10">✉</text>
+              </g>
+              <g class="ci-float-1" style="animation-delay:1.2s">
+                <circle cx="54" cy="290" r="13" fill="url(#nodeGrad2)" opacity="0.7"/>
+                <text x="54" y="295" text-anchor="middle" font-size="10">⬡</text>
+              </g>
+
+              <!-- Connection dots -->
+              <circle cx="190" cy="60" r="5" fill="var(--primary)" opacity="0.6">
+                <animate attributeName="opacity" values="0.3;0.8;0.3" dur="2.5s" repeatCount="indefinite"/>
+              </circle>
+              <circle cx="320" cy="200" r="4" fill="var(--primary)" opacity="0.5">
+                <animate attributeName="opacity" values="0.2;0.7;0.2" dur="3s" begin="0.8s" repeatCount="indefinite"/>
+              </circle>
+              <circle cx="60" cy="190" r="4" fill="var(--primary)" opacity="0.5">
+                <animate attributeName="opacity" values="0.2;0.7;0.2" dur="3.5s" begin="1.4s" repeatCount="indefinite"/>
+              </circle>
+
+              <!-- Gradient defs -->
+              <defs>
+                <linearGradient id="blobGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#1BBFA8"/>
+                  <stop offset="100%" stop-color="#0EA5E9"/>
+                </linearGradient>
+                <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#1BBFA8"/>
+                  <stop offset="100%" stop-color="#0EA5E9"/>
+                </linearGradient>
+                <linearGradient id="envGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#e8fdf9"/>
+                  <stop offset="100%" stop-color="#d0f5ef"/>
+                </linearGradient>
+                <linearGradient id="envFlapGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#1BBFA8"/>
+                  <stop offset="100%" stop-color="#0EA5E9"/>
+                </linearGradient>
+                <linearGradient id="bubble1Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#1BBFA8"/>
+                  <stop offset="100%" stop-color="#17a393"/>
+                </linearGradient>
+                <linearGradient id="bubble2Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#0EA5E9"/>
+                  <stop offset="100%" stop-color="#0284c7"/>
+                </linearGradient>
+                <linearGradient id="nodeGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#1BBFA8" stop-opacity="0.25"/>
+                  <stop offset="100%" stop-color="#1BBFA8" stop-opacity="0.1"/>
+                </linearGradient>
+                <linearGradient id="nodeGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#0EA5E9" stop-opacity="0.25"/>
+                  <stop offset="100%" stop-color="#0EA5E9" stop-opacity="0.1"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <div class="contact-content">
+            <div class="section-label">
+              <span class="label-dot"></span>Contact
+            </div>
+            <h2 class="section-heading reveal-text">
+              Let's Build<br /><span class="gradient-text"
+                >Something Great.</span
+              >
+            </h2>
+            <p class="contact-sub reveal-text">
+              If you're building a product or launching a new digital platform,
+              let's collaborate.
+            </p>
+            <div class="contact-links reveal-stagger">
+              <a href="mailto:ramki.uiux07@gmail.com" class="contact-item">
+                <div class="ci-icon-wrap">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                    />
+                    <polyline points="22,6 12,13 2,6" />
+                  </svg>
+                </div>
+                <div class="ci-body">
+                  <span class="ci-label">Email</span>
+                  <span class="ci-value">ramki.uiux07@gmail.com</span>
+                </div>
+              </a>
+              <a href="tel:+918778621851" class="contact-item">
+                <div class="ci-icon-wrap">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.59 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.79a16 16 0 0 0 6 6l.86-.86a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7a2 2 0 0 1 1.72 2.03z"
+                    />
+                  </svg>
+                </div>
+                <div class="ci-body">
+                  <span class="ci-label">Phone</span>
+                  <span class="ci-value">+91 8778621851</span>
+                </div>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/ramakrishnan-r-344043233/"
+                target="_blank"
+                rel="noopener"
+                class="contact-item"
+              >
+                <div class="ci-icon-wrap">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                    />
+                    <rect x="2" y="9" width="4" height="12" />
+                    <circle cx="4" cy="4" r="2" />
+                  </svg>
+                </div>
+                <div class="ci-body">
+                  <span class="ci-label">LinkedIn</span>
+                  <span class="ci-value">ramakrishnan-r-344043233</span>
+                </div>
+              </a>
+            </div>
+            <a
+              href="mailto:ramki.uiux07@gmail.com"
+              class="btn btn-primary contact-cta reveal-stagger"
+            >
+              <span>Start a Conversation</span>
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── FOOTER ─── -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <span class="footer-logo">RK<span class="dot">.</span></span>
+        <span class="footer-copy"
+          >© 2025 Ramakrishnan R. All rights reserved.</span
+        >
+        <div class="footer-links">
+          <a href="#hero">Top</a>
+          <a href="mailto:ramki.uiux07@gmail.com">Email</a>
+          <a
+            href="https://www.linkedin.com/in/ramakrishnan-r-344043233/"
+            target="_blank"
+            rel="noopener"
+            >LinkedIn</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
