@@ -45,9 +45,50 @@ const clamp = (v, lo, hi) => Math.min(Math.max(v, lo), hi);
 })();
 
 /* ══════════════════════════════════════
+   HAMBURGER MENU
+══════════════════════════════════════ */
+(function initHamburger() {
+  const btn     = qs("#menuToggle");
+  const drawer  = qs("#mobileNav");
+  const links   = qsa(".mnav-link", drawer);
+  if (!btn || !drawer) return;
+
+  const open  = () => {
+    btn.classList.add("open");
+    drawer.classList.add("open");
+    btn.setAttribute("aria-expanded", "true");
+    drawer.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+  };
+
+  const close = () => {
+    btn.classList.remove("open");
+    drawer.classList.remove("open");
+    btn.setAttribute("aria-expanded", "false");
+    drawer.setAttribute("aria-hidden", "true");
+    document.body.style.overflow = "";
+  };
+
+  btn.addEventListener("click", () => {
+    drawer.classList.contains("open") ? close() : open();
+  });
+
+  // Close when any link is tapped
+  links.forEach((l) => l.addEventListener("click", close));
+
+  // Close on ESC
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") close();
+  });
+})();
+
+
+
+
 /* ══════════════════════════════════════
    CUSTOM CURSOR (Figma-style dot + ring)
 ══════════════════════════════════════ */
+
 (function initCursor() {
   if (window.matchMedia("(pointer: coarse)").matches) return;
 
